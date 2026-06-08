@@ -12,14 +12,15 @@ exports.loginUser = async (req, res) => {
     if (data.token) {
       res.cookie("token", data.token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
         path: "/",
       });
     }
 
     return successResponse(res, "User login successful", data);
   } catch (err) {
+    console.error("Login error:", err.message);
     return errorResponse(
       res,
       err.message || "Login failed",
@@ -39,14 +40,15 @@ exports.loginStaff = async (req, res) => {
     if (data.token) {
       res.cookie("token", data.token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
         path: "/",
       });
     }
 
     return successResponse(res, "Staff login success", data);
   } catch (err) {
+    console.error("Staff login error:", err.message);
     return errorResponse(
       res,
       err.message || "Login failed",
