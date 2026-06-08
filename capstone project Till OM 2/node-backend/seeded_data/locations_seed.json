@@ -1,0 +1,284 @@
+[
+  {
+    "city": "Bengaluru",
+    "subregion": "Indiranagar",
+    "latitude": 12.9719,
+    "longitude": 77.6412
+  },
+  {
+    "city": "Bengaluru",
+    "subregion": "Whitefield",
+    "latitude": 12.9698,
+    "longitude": 77.75
+  },
+  {
+    "city": "Bengaluru",
+    "subregion": "Koramangala",
+    "latitude": 12.9352,
+    "longitude": 77.6245
+  },
+  {
+    "city": "Bengaluru",
+    "subregion": "HSR Layout",
+    "latitude": 12.9121,
+    "longitude": 77.6446
+  },
+  {
+    "city": "Bengaluru",
+    "subregion": "Electronic City",
+    "latitude": 12.8452,
+    "longitude": 77.6602
+  },
+  {
+    "city": "Bengaluru",
+    "subregion": "Jayanagar",
+    "latitude": 12.9307,
+    "longitude": 77.5838
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Andheri",
+    "latitude": 19.1136,
+    "longitude": 72.8697
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Bandra",
+    "latitude": 19.0596,
+    "longitude": 72.8295
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Powai",
+    "latitude": 19.1176,
+    "longitude": 72.906
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Colaba",
+    "latitude": 18.9067,
+    "longitude": 72.8147
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Borivali",
+    "latitude": 19.2307,
+    "longitude": 72.8567
+  },
+  {
+    "city": "Mumbai",
+    "subregion": "Worli",
+    "latitude": 19.0176,
+    "longitude": 72.8177
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Dwarka",
+    "latitude": 28.5823,
+    "longitude": 77.05
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Saket",
+    "latitude": 28.5245,
+    "longitude": 77.21
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Connaught Place",
+    "latitude": 28.6315,
+    "longitude": 77.2167
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Hauz Khas",
+    "latitude": 28.5494,
+    "longitude": 77.2044
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Rohini",
+    "latitude": 28.7041,
+    "longitude": 77.1025
+  },
+  {
+    "city": "Delhi",
+    "subregion": "Karol Bagh",
+    "latitude": 28.6515,
+    "longitude": 77.1917
+  },
+  {
+    "city": "Hyderabad",
+    "subregion": "Gachibowli",
+    "latitude": 17.4401,
+    "longitude": 78.3489
+  },
+  {
+    "city": "Hyderabad",
+    "subregion": "Jubilee Hills",
+    "latitude": 17.4326,
+    "longitude": 78.4071
+  },
+  {
+    "city": "Hyderabad",
+    "subregion": "Banjara Hills",
+    "latitude": 17.4175,
+    "longitude": 78.4328
+  },
+  {
+    "city": "Hyderabad",
+    "subregion": "Kukatpally",
+    "latitude": 17.4948,
+    "longitude": 78.3996
+  },
+  {
+    "city": "Hyderabad",
+    "subregion": "Madhapur",
+    "latitude": 17.4483,
+    "longitude": 78.3915
+  },
+  {
+    "city": "Pune",
+    "subregion": "Kothrud",
+    "latitude": 18.5074,
+    "longitude": 73.8077
+  },
+  {
+    "city": "Pune",
+    "subregion": "Hinjewadi",
+    "latitude": 18.5913,
+    "longitude": 73.7389
+  },
+  {
+    "city": "Pune",
+    "subregion": "Viman Nagar",
+    "latitude": 18.5679,
+    "longitude": 73.9143
+  },
+  {
+    "city": "Pune",
+    "subregion": "Baner",
+    "latitude": 18.559,
+    "longitude": 73.7797
+  },
+  {
+    "city": "Pune",
+    "subregion": "Kalyani Nagar",
+    "latitude": 18.5463,
+    "longitude": 73.9033
+  },
+  {
+    "city": "Chennai",
+    "subregion": "Adyar",
+    "latitude": 13.0012,
+    "longitude": 80.2565
+  },
+  {
+    "city": "Chennai",
+    "subregion": "T. Nagar",
+    "latitude": 13.0418,
+    "longitude": 80.2341
+  },
+  {
+    "city": "Chennai",
+    "subregion": "Velachery",
+    "latitude": 12.9797,
+    "longitude": 80.22
+  },
+  {
+    "city": "Chennai",
+    "subregion": "Anna Nagar",
+    "latitude": 13.085,
+    "longitude": 80.2101
+  },
+  {
+    "city": "Chennai",
+    "subregion": "Mylapore",
+    "latitude": 13.0368,
+    "longitude": 80.2676
+  },
+  {
+    "city": "Chennai",
+    "subregion": "Guindy",
+    "latitude": 13.0067,
+    "longitude": 80.2206
+  },
+  {
+    "city": "Lucknow",
+    "subregion": "Gomti Nagar",
+    "latitude": 26.8529,
+    "longitude": 81.0025
+  },
+  {
+    "city": "Lucknow",
+    "subregion": "Alambagh",
+    "latitude": 26.8041,
+    "longitude": 80.8986
+  },
+  {
+    "city": "Lucknow",
+    "subregion": "Hazratganj",
+    "latitude": 26.8493,
+    "longitude": 80.9419
+  },
+  {
+    "city": "Lucknow",
+    "subregion": "Indira Nagar",
+    "latitude": 26.8845,
+    "longitude": 80.9926
+  },
+  {
+    "city": "Ahmedabad",
+    "subregion": "Satellite",
+    "latitude": 23.0298,
+    "longitude": 72.5126
+  },
+  {
+    "city": "Ahmedabad",
+    "subregion": "Navrangpura",
+    "latitude": 23.0365,
+    "longitude": 72.5611
+  },
+  {
+    "city": "Ahmedabad",
+    "subregion": "Prahlad Nagar",
+    "latitude": 23.0084,
+    "longitude": 72.5029
+  },
+  {
+    "city": "Ahmedabad",
+    "subregion": "Bodakdev",
+    "latitude": 23.0365,
+    "longitude": 72.5117
+  },
+  {
+    "city": "Kolkata",
+    "subregion": "Salt Lake",
+    "latitude": 22.5804,
+    "longitude": 88.4143
+  },
+  {
+    "city": "Kolkata",
+    "subregion": "New Town",
+    "latitude": 22.583,
+    "longitude": 88.4614
+  },
+  {
+    "city": "Kolkata",
+    "subregion": "Park Street",
+    "latitude": 22.5517,
+    "longitude": 88.3516
+  },
+  {
+    "city": "Kolkata",
+    "subregion": "Ballygunge",
+    "latitude": 22.5278,
+    "longitude": 88.3653
+  },
+  {
+    "city": "Kolkata",
+    "subregion": "Behala",
+    "latitude": 22.493,
+    "longitude": 88.3188
+  }
+]
