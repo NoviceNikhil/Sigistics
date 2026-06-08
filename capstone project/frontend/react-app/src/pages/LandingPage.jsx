@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import heroDelivery from "../assets/hero-delivery.jpg";
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ const LandingPage = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/src/assets/hero-delivery.jpg"
+                        src={heroDelivery}
                         alt="Delivery"
                         className="w-full h-full object-cover"
                     />
