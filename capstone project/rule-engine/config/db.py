@@ -1,3 +1,4 @@
+import certifi
 import motor.motor_asyncio
 from beanie import init_beanie
 
@@ -6,7 +7,10 @@ from config.settings import settings
 
 async def init_db():
     # Use the URI from your .env file
-    client = motor.motor_asyncio.AsyncIOMotorClient(settings.MONGODB_URI)
+    client = motor.motor_asyncio.AsyncIOMotorClient(
+        settings.MONGODB_URI,
+        tlsCAFile=certifi.where()
+    )
     db = client[settings.DATABASE_NAME]
     # Use the database name from your .env file
     await init_beanie(

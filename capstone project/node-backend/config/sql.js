@@ -7,9 +7,18 @@ const sequelize = new Sequelize(
   process.env.SQL_PASSWORD,
   {
     host: process.env.SQL_HOST,
-    port: process.env.SQL_PORT,
+    port: process.env.SQL_PORT || 3306,
     dialect: "mysql",
     logging: false,
+    // SSL required for TiDB Cloud; ignored for local MySQL
+    ...(process.env.SQL_SSL === "true" && {
+      dialectOptions: {
+        ssl: {
+          minVersion: "TLSv1.2",
+          rejectUnauthorized: true,
+        },
+      },
+    }),
   },
 );
 
