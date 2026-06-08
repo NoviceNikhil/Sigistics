@@ -35,6 +35,16 @@ exports.loginUser = async (email, password) => {
   }
 
   if (user.role === "admin") {
+    // SKIP_OTP=true on cloud (Render blocks SMTP). Locally, OTP works normally.
+    if (process.env.SKIP_OTP === "true") {
+      const token = jwt.sign(
+        { id: user.id, role: user.role },
+        process.env.JWT_SECRET,
+        { expiresIn: "1d" },
+      );
+      return { token, user: sanitizeUser(user) };
+    }
+
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
     const hashedOtp = await bcrypt.hash(otp, 10);
@@ -92,6 +102,16 @@ exports.loginStaff = async (email, password, role) => {
     const isMatch = await bcrypt.compare(password, user.password_hash);
     if (!isMatch) {
       throw new Error("Invalid credentials");
+    }
+
+    // SKIP_OTP=true on cloud (Render blocks SMTP). Locally, OTP works normally.
+    if (process.env.SKIP_OTP === "true") {
+      const token = jwt.sign(
+        { id: user.id, role: "admin" },
+        process.env.JWT_SECRET,
+        { expiresIn: "1d" },
+      );
+      return { token, role: "admin", user: sanitizeUser(user) };
     }
 
     // 🔐 OTP FLOW
