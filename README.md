@@ -1,5 +1,7 @@
 # Sigistics — Intelligent Logistics & Shipment Management Platform
 
+🌐 **[Live Demo](https://sigistics-frontend.onrender.com)** — Click to open the deployed application
+
 A scalable, secure, and production-ready full-stack logistics platform that unifies shipment lifecycle management, AI-powered rule evaluation, real-time delivery agent tracking, fleet management, and integrated payment processing — designed for a three-tier actor model (Admin, Customer/Vendor, Delivery Agent).
 
 ![Architecture Diagram](./images/architecture.png)
