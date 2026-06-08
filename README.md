@@ -69,13 +69,6 @@ A scalable, secure, and production-ready full-stack logistics platform that unif
 
 ---
 
-### Admin — User Management
-- 👥 **All Users View** — Monitor all registered customer accounts from a single panel
-- 🔐 **Role Visibility** — See each user's assigned role and account status at a glance
-
-![User Management](./images/user_management.png)
-
----
 
 ### Customer — Shipment Dashboard
 - 📦 **Personal Shipment View** — See all your active and past shipments with current status, tags, and delay indicators
