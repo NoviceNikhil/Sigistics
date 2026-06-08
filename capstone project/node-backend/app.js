@@ -20,6 +20,11 @@ const chatbotRoutes = require("./routes/chatbotRoutes");
 
 const app = express();
 
+// Trust proxy when behind a reverse proxy (Render, Heroku, etc.)
+// Required for express-rate-limit to work on cloud platforms.
+// Has no effect when running locally without a proxy — safe to keep.
+app.set("trust proxy", 1);
+
 // ================= MIDDLEWARE =================
 app.use(express.json());
 app.use(cookieParser());
