@@ -27,7 +27,10 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: (origin, callback) => {
-      const allowedOrigins = ["http://localhost:5173"];
+      const allowedOrigins = [
+        "http://localhost:5173",
+        process.env.FRONTEND_URL,
+      ].filter(Boolean);
 
       // allow server-to-server / curl requests (no Origin header)
       if (!origin) return callback(null, true);
