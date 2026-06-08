@@ -74,7 +74,11 @@ const StaffLogin = () => {
       if (loginStaff.fulfilled.match(resultAction)) {
         const payload = resultAction.payload?.data || resultAction.payload;
 
-        if (payload?.isAdmin) {
+        if (payload?.skipOtp) {
+          // Cloud mode: OTP skipped, admin logged in directly
+          toast({ title: `Logged in as Admin` });
+          navigate("/dashboard");
+        } else if (payload?.isAdmin) {
           if (role !== "admin") {
             import("@/store/authSlice").then(({ fullLogout }) => dispatch(fullLogout()));
             toast({ title: "Error", description: "Agent not registered", variant: "destructive" });

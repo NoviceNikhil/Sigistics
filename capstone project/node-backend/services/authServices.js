@@ -111,7 +111,7 @@ exports.loginStaff = async (email, password, role) => {
         process.env.JWT_SECRET,
         { expiresIn: "1d" },
       );
-      return { token, role: "admin", user: sanitizeUser(user) };
+      return { token, role: "admin", user: sanitizeUser(user), skipOtp: true };
     }
 
     // 🔐 OTP FLOW
