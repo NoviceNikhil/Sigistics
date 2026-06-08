@@ -99,3 +99,9 @@ coverage/
 *.zip
 *.tar.gz
 *.rar
+
+# ==========================
+# Deployment notes (contains credentials)
+# ==========================
+DEPLOYMENT_NOTES.md
+LOCAL_SETUP_GUIDE.md
